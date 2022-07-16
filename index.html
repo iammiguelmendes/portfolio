@@ -1,216 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Miguel Mendes</title>
-<!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom CSS -->
-<link href="css/style.css" rel="stylesheet">
-<!-- Custom Fonts -->
-<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]> 
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\\\\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AV Bruno Mendes</title>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-		<a class="navbar-brand page-scroll" href="index.html">
-		MM </a>
-	</div>
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-		<ul class="nav navbar-nav">
-			<li>
-			<a href="index.html">Expertise</a>
-			</li>
-			<li>
-			<a href="portfolio-item.html">Projects</a>
-			</li>
-			<li>
-			<a href="page-sample.html">About</a>
-			</li>
-			<li>
-			<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</div>
-	<!-- /.navbar-collapse -->
-</div>
-<!-- /.container -->
-</nav>
-<!-- Intro Header -->
-<header class="intro">
-<div class="intro-body">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">Miguel Mendes</h1>
-				<p class="intro-text">
-					Design usual interfaces with unusual vision
-				</p>
-					<a href="#expertise" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated "></i><a>
-					</p>
-			</div>
-		</div>
-	</div>
-</div>
-</header>
-<section id="expertise">
+<body>
+    <header class="header">
+        <nav id="iconNav">
+          <a href="#" class="text-center" id="nav1">Home</a>
+          <a href="#" class="text-center" id="nav2">Projects</a>
+          <a href="#" class="text-center" id="nav3">About</a>
+          <a href="#" class="text-center" id="nav4">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!--hero section-->
+        <section class="hero" id="hero">
+            <div class="text-center align-items-center my-5">
+                <h1 id="my-name" class="text-light">Bruno Miguel</h1>
+                <p class="text-light">Design is to look at usual things with unusual eyes</p>
+                <a href="#portfolio" class="text-light"><i class="bx bx-chevron-down-circle icon"></i><a>
+            </div>
+        </section>
+        <!--portfolio section-->
+        <section class="portfolio" id="portfolio">
+            <!-- Template retirada de: https://startbootstrap.com/snippets/thumbnail-gallery-->
+            <div class="container">
+                <h1 class="fw-light  text-center mt-4 mb-0">Portfolio</h1>
+                <hr class="mt-2 mb-5">
+                <div class="row text-center text-lg-start">
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto1.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        Web Design - Bakery
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto2.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        Logo - Bakery
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto3.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        Moodboard/Identity - Bakery
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto4.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        Design Style Guide - Bakery
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto6.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        Wireframing
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 my-3">
+                    <div class="card">
+                      <!-- Card image -->
+                      <img class="card-img-top" src="./img/foto5.jpg" alt="Card image cap">
+                      <!-- Card content -->
+                      <div class="card-body text-dark bg-light p-2">
+                        HTML & CSS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+        <!--process section-->
+        <section class="process" id="process">
+          <div class="container">
+            <h1 class="fw-light  text-center mt-4 mb-0">My web design process</h1>
+            <hr class="mt-2 mb-5">
+            <div class="row text-center text-lg-start">
+              <div class="col-lg-4 col-md-6 col-12">
+                  <h4 class="text-start">Discovery</h4>
+                  <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                    quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h4 class="text-start">Strategy</h4>
+                  <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                    quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h4 class="text-start">Wireframing</h4>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                  quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h4 class="text-start">Visual Design</h4>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                  quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h4 class="text-start">Development</h4>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                  quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <h4 class="text-start">Delivery</h4>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                  quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+               <!--about section-->
+        <section class="about" id="about">
+          <div class="container">
+                <h1 class="fw-light  text-center mt-4 mb-0">About me</h1>
+                <hr class="mt-2 mb-5">
+                <div class="row py-5">
+                  <div class="col-lg-6 col-md-6 col-12 py-5">
+                    <h1 class="py-5">I'm a UX Designer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis, et optio eligendi quos atque officiis. Totam ipsum ea distinctio labore, fugiat minus laboriosam expedita hic sit cumque explicabo dolore nulla, non excepturi ipsam aliquid sed recusandae impedit earum, deserunt cum aspernatur nesciunt. Ipsum aperiam eos hic non unde iusto nemo porro neque, corrupti magnam itaque placeat vero.</p>
+                    <p>Inventore consequuntur ullam quibusdam, quas vero repellat animi nulla accusantium voluptates esse rem ipsum quos quis voluptatibus dolorem qui aspernatur tenetur tempora, commodi quasi possimus doloremque. Libero quaerat unde sunt alias obcaecati inventore earum aut molestiae officiis ducimus, sequi, iste possimus deleniti facere ipsam itaque vel consectetur ut enim illo. </p>
+                    <p>Voluptatem, pariatur. Quae ipsa ipsum tempora nostrum magnam. Necessitatibus tempora expedita nobis voluptate natus quisquam quia nisi nesciunt harum nemo facilis veritatis facere commodi esse non, optio illo suscipit vitae recusandae porro unde sequi laboriosam eos. Cum et voluptates architecto debitis omnis?</p>
+                    </div>
+                  <div class="col-lg-6 col-md-6 col-12 py-5">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" class="img-fluid">
+                  </div>
+                </div>
+          </div>
+        </section>
+         <!--reasons section-->
+        <section class="reasons" id="reasons">
+          <div class="container">
+            <h1 class="fw-light  text-center mt-4 mb-0">Reasons to hire me</h1>
+            <hr class="mt-2 mb-5">
+            <div class="row text-center text-lg-start">
+              <div class="col-lg-4 col-md-12 col-12">
+                  <h4 class="text-start">Potential</h4>
+                  <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                    quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-12 col-12">
+                <h4 class="text-start">Experience in development</h4>
+                  <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                    quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+              <div class="col-lg-4 col-md-12 col-12">
+                <h4 class="text-start">Journey</h4>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Perferendis accusamus consequatur iure velit blanditiis similique rerum sunt, est tenetur molestias voluptatibus sapiente, 
+                  quam quas possimus suscipit corporis veritatis necessitatibus quasi.</p>
+              </div>
+        </section>
 
-<div class="expertise-gallery text-left">
-	
-	<ul>
-		<h2>EXPERTISE</h2>
-		<li class="col-md-4">
-			<div class="line">
-				<h4>UX Design</h4>
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	        		</div>
-			</div>
-		
-		</li>
-		<li class="col-md-4">
-			<div class="line">
-				<h4>Software Development</h4>
-				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	        		</div>
-			</div>
-		
-		</li>
-		<li class="col-md-4">
-		<h4>IT Support</h4>
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-		</li>
-	</ul>
-</div>
-<hr>
-</section>
-<section id="portfolio">
-<div class="gallery text-center">
-	<h2>PORTFOLIO</h2>
-	<ul>
-		<li class="col-md-4">
-		<a href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=1" alt="">
-		</a>
-		</li>
-		<li class="col-md-4">
-		<a href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=2" alt="">
-		</a>
-		</li>
-		<li class="col-md-4">
-		<a href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=3" alt="">
-		</a>
-		</li>
-		<li class="col-md-4">
-		<a class="image" href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=4" alt="">
-		</a>
-		</li>
-		<li class="col-md-4">
-		<a href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=5" alt="">
-		</a>
-		</li>
-		<li class="col-md-4">
-		<a href="portfolio-item.html">
-		<img src="http://unsplash.it/680/380?random=6" alt="">
-		</a>
-	</ul>
-</div>
-</section>
-<!-- About Section -->
-<section id="about">
-<div class="container content-section ">
-	<div class="row text-center">
-		<h2>LIL' ABOUT ME</h2>
-		<div class="col-lg-8 col-lg-offset-2">
-			<p>
-				Praesent ac dignissim diam. Aliquam lobortis elit et sapien eleifend, at sollicitudin metus elementum. Morbi imperdiet id ipsum at tristique. Nam suscipit tristique sem, <a href="#">quis</a> laoreet leo. Maecenas eget ante ipsum.
-			</p>
-			<p>
-				<a href="#" class="btnghost"><i class="fa fa-download"></i> Curriculum Vitae</a>
-			</p>
-		</div>
-	</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section id="contact">
-<div class="container content-section text-center">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Author's Message</h2>
-			<p>
-				 If you like "Aries" template, we'd love to hear from you, whether it be feedback, thanks, new template ideas or even just to say hello, we welcome it all!
-			</p>
-			<p>
-				<i><a href="mailto:wowthemesnet@gmail.com" style="border-bottom:1px dashed #ccc;">wowthemesnet@gmail.com</a></i>
-			</p>
-			<ul class="list-inline banner-social-buttons">
-				<li>
-				<a href="https://twitter.com/wowthemesnet" class="btn btnghost btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
-				</li>
-				<li>
-				<a href="https://www.facebook.com/pages/wowthemesnet/562560840468823" class="btn btnghost btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
-				</li>
-				<li>
-				<a href="https://plus.google.com/u/0/b/110916582192388695332/110916582192388695332/posts" class="btn btnghost btn-lg"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google+</span></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container text-center">
-	<p class="credits">
-		Copyright &copy; Your Website 2015<br/>
-		"Aries" Template by WowThemes.net
-	</p>
-</div>
-</footer>
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="js/theme.js"></script>
+        <!--contact section-->
+        <section class="contacto  text-white" id="contacto">
+            <div class="container">
+              <h1 class="fw-light  text-center text-light mt-4 mb-0">Contact</h1>
+              <hr class="mt-2 mb-5">
+          
+              <div class="pt-5 text-muted contact-info text-center">
+                You can copy my email clicking
+                <div id="secretInfo" style="display: none;">mail@ggrgrrgr.com</div>
+                    <button type="button" id="btnCopy" class="cta">here</button> or you can message me on <a href="#" class="cta">LinkedIn</a>.
+                  </div>
+                </div>
+        </section>
+        
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
