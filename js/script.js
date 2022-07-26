@@ -17,15 +17,28 @@ var $body = document.getElementsByTagName('body')[0];
       });
 
 
-window.addEventListener('scroll', function(){
-  var header = document.querySelector('.header');
-  header.classList.toggle("sticky", window.scrollY > 0);
-  var text1 = document.querySelector('#nav1');
-  text1.classList.toggle("sticky", window.scrollY > 0);
-  var text2 = document.querySelector('#nav2');
-  text2.classList.toggle("sticky", window.scrollY > 0);
-  var text3 = document.querySelector('#nav3');
-  text3.classList.toggle("sticky", window.scrollY > 0);
-  var text4 = document.querySelector('#nav4');
-  text4.classList.toggle("sticky", window.scrollY > 0);
+
+
+const navbar = document.querySelector('.navbar');
+
+navbar.querySelector('.toggle').addEventListener('click', () => {
+
+  navbar.classList.toggle('collapsed');
+
+});
+
+
+
+window.addEventListener('scroll', e => {
+
+  let windowY = window.pageYOffset;
+
+  let navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+  if (windowY > navbarHeight) navbar.classList.add('sticky');else
+  navbar.classList.remove('sticky');
+
+
+
+
 });

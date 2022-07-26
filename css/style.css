@@ -11,16 +11,10 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color:#121212;
+    font-size: 14px;
 }
 a: hover{
     color: white;
-}
-.nav-item {
-    text-decoration: none;
-    font-weight: 500;
-}
-.navbar-brand{
-    color:red;
 }
 .hero{
     height: 100vh;
@@ -29,6 +23,7 @@ a: hover{
 #my-name{
 font-size: 50px;
 padding-top:35vh;
+font-family: Lacquer;
 }
 .portfolio,.about,.contacto,.process,.reasons{
     padding-top:5vh;
@@ -54,7 +49,7 @@ font-weight: 100;
 }
 .contact-info{
     font-weight: 200;
-    font-size: 2.5vw;
+    font-size: 20px;
     padding-bottom: 10vh;
 }
 
@@ -122,62 +117,196 @@ font-weight: 100;
     color: white;
 }
 
-.header{
-    transition: all 0.4s ease;
-}
-.header.sticky{
-  background: #f0f0f0;
-  position: fixed;
+
+.navbar {
+  color: #fff;
   width: 100%;
-  padding: 10px 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
   top: 0;
-  transition: all 0.4s ease;
-  box-shadow: 0px 1px 15px rgb(0 0 0 / 10%);
-  z-index: 100;
+   position: fixed;
+  z-index: 40;
+  transition: all linear 0.4s
 }
-.text-center a.sticky{
-    color: black;
+.navbar.sticky{
+  background: #080808;
+  transition: all linear 0.4s
 }
-#nav1,#nav2,#nav3,#nav4{
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    background: none;
-    border-bottom: 3px solid transparent;
-    left: 50%;
-    right: 0;
+.navbar .logo h2{
+  cursor: pointer;
+  font-family: Lacquer;
+  color: white;
+  margin-left: 50px;
 }
 
-#nav4{
-    color: black;
-    background: white;
+.navbar ul.links {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease all, 0s ease background;
+  margin-right: 50px;
+
 }
-#nav4.sticky{
-    color: white;
-    background: #121212;
+.navbar ul.links li, #links-talk {
+  text-transform: uppercase;
+  padding: 0 15px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease all, 0s ease margin;
 }
-#nav1.sticky,#nav2.sticky,#nav3.sticky{
-    color: black;
+.navbar ul.links li a {
+  text-decoration: none;
+  color: #fff;
 }
-#nav1.sticky:hover,#nav2.sticky:hover,#nav3.sticky:hover{
-    color: black;
-    border-bottom: 3px solid black;
+.navbar ul.links #links-talk {
+  text-decoration: none;
+  color: black;
+  background: white;
 }
 
-#nav1:hover,#nav2:hover,#nav3:hover{
-    border-bottom: 2px solid white;
-    left: 0%;
+.navbar ul.links li a {
+  display: inline-block;
+  position: relative;
+  color: white
+  cursor: pointer;
 }
-/* (A) HORIZONTAL MENU ON BIG SCREEN */
-#iconNav { display: flex; }
-#iconNav a { width: 100%; }
 
-/* (B) SMALL SCREEN - LARGE ICON SMALL TEXT */
-@media only screen and (max-width: 768px) {
-  #iconNav a { text-align: center; }
-  #iconNav i {
-    display: block;
-    font-size: 2em; 
+.navbar ul.links li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar ul.links li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+@media screen and (max-width: 750px) {
+    .navbar{
+        height: 65px;
+    }
+  .navbar .right {
+    height: 0;
+    overflow: hidden;
   }
- 
+
+  .toggle {
+    position: absolute;
+    top: 32.5px;
+    right: 20px;
+    z-index: 99;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle > * {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+  }
+
+.navbar ul.links #links-talk {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  background: none;
+}
+.navbar ul.links #links-talk:hover{
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: white;
+}
+
+  .navbar.collapsed .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+  .navbar.collapsed .toggle .line2 {
+    opacity: 0;
+  }
+  .navbar.collapsed .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .navbar.collapsed .logo {
+    position: absolute;
+    z-index: 44;
+  }
+
+  .navbar .links {
+    position: fixed;
+    background: #080808;
+    z-index: 40;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    width: 40vw;
+    height: 100vh;
+
+  }
+   .navbar ul.links li {
+    margin-right: 30px;
+   }
+  .navbar .links li:first-child {
+    margin-top: 80px;
+  }
+
+  .navbar.collapsed .links {
+    left: 0;
+
+  }
+  .navbar.collapsed .links a {
+    color: #fff;
+  }
+  .navbar.collapsed .links li {
+    width: 100%;
+  }
+  .navbar.collapsed .links li:hover a {
+    color: #080808;
+  }
+
+  .navbar.collapsed .right {
+    position: fixed;
+    width: 45vw;
+    text-align: center;
+    height: auto;
+    bottom: 40px;
+    left: 22.5vw;
+    transform: translateX(-50%);
+    z-index: 45;
+
+  }
+
+  .navbar.collapsed ~ main {
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+
+  .navbar.sticky {
+    position: fixed;
+    z-index: 40;
+  }
+
+  .contact-info{
+    font-size: 14px;
+  }
 }
