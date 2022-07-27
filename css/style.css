@@ -13,11 +13,14 @@ body{
 	background-color:#151515;
     font-size: 14px;
 }
-a: hover{
-    color: #f0f0f0;
+a{
+    text-decoration: none;
 }
 section h1{
     font-family: Lacquer;
+}
+.contacto hr {
+    background-color: #BAA37A;
 }
 .hero{
     height: 100vh;
@@ -42,8 +45,6 @@ font-family: Lacquer;
   border: 0;
   outline: 0;
 }
-
-
 .icon{
 font-size: 30px;
 margin-top:30vh;
@@ -91,7 +92,7 @@ font-weight: 100;
     transform: translateY(-5px);
 }
 .portfolio, .reasons, .process, .about{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #f0f0f0;
 }
 .process{
     margin-bottom: 25vh;
