@@ -38,12 +38,14 @@ font-family: Lacquer;
 .project-title{
     font-family: Lacquer;
 }
-.portfolio,.about,.contacto,.process,.reasons{
+.portfolio,.about,.process,.reasons{
     padding-top:5vh;
 }
+
 .contacto{
     background-color: rgba(15, 15, 15, 0.7);
     margin: 10vw 0px;
+    padding-top: 10vh;
 }
 .btnsubmit{
     width:100%;
