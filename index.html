@@ -11,7 +11,7 @@
     <title>Miguel Mendes</title>
 </head>
 <body>
-   <div class="navbar navbar-fixed-top">
+   <div class="navbar navbar-fixed-top" id="navbar">
      <div class="logo">
     <a href="#hero"><h2>MM</h2></a>
   </div>
@@ -46,18 +46,21 @@
         <section class="portfolio pt-5" id="portfolio">
             <!-- Template retirada de: https://startbootstrap.com/snippets/thumbnail-gallery-->
             <div class="container">
+              <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-chevrons-up'></i></button>
                 <h1 class="fw-light  text-center mt-4 mb-0">Portfolio</h1>
                 <hr class="mt-2 mb-5">
                 <div class="row text-center text-lg-start">
                   <div class="col-lg-4 col-md-6 col-12 my-3">
-                    <div class="card">
-                      <!-- Card image -->
-                      <img class="card-img-top" src="./img/foto1.jpg" alt="Card image cap">
-                      <!-- Card content -->
-                      <div class="card-body text-dark bg-light p-2">
-                        Web Design - Bakery
+                    <a href="docelene.html">
+                      <div class="card">
+                        <!-- Card image -->
+                        <img class="card-img-top" src="./img/foto1.jpg" alt="Card image cap">
+                        <!-- Card content -->
+                        <div class="card-body text-dark bg-light p-2">
+                          Web Design - Bakery
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="col-lg-4 col-md-6 col-12 my-3">
                     <div class="card">
@@ -157,6 +160,7 @@
               </div>
             </div>
           </div>
+
         </section>
                <!--about section-->
         <section class="about pt-5" id="about">

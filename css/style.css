@@ -1,5 +1,4 @@
 *{
-    color:#151515;
     margin:0;
     padding: 0;
     scroll-behavior: smooth;
@@ -13,6 +12,7 @@ body{
 	background-color:#151515;
     font-size: 14px;
 }
+
 a{
     text-decoration: none;
 }
@@ -26,10 +26,17 @@ section h1{
     height: 100vh;
     color: #f0f0f0;
 }
-#my-name{
+#my-name, #project-hero{
 font-size: 50px;
 padding-top:35vh;
 font-family: Lacquer;
+}
+.port-doce{
+    width: 100%;
+    padding-top: 10vh;
+}
+.project-title{
+    font-family: Lacquer;
 }
 .portfolio,.about,.contacto,.process,.reasons{
     padding-top:5vh;
@@ -120,7 +127,10 @@ font-weight: 100;
     color: #f0f0f0;
 }
 
-
+/* docelene */
+.docelene{
+    color: #f0f0f0;
+}
 .navbar {
   color: #fff;
   width: 100%;
@@ -163,6 +173,9 @@ font-weight: 100;
   align-items: center;
   transition: 0.4s ease all, 0s ease margin;
 }
+#links-talk{
+    border: 1px solid transparent;
+}
 .navbar ul.links li a {
   text-decoration: none;
   color: #fff;
@@ -173,7 +186,9 @@ font-weight: 100;
   background: #BAA37A;
 }
 .navbar ul.links #links-talk:hover {
-  background: #f0f0f0;
+  background: transparent;
+  border: 1px solid #f0f0f0;
+  color: #f0f0f0;
 }
 
 
@@ -204,6 +219,7 @@ font-weight: 100;
 
 .card {
 transition: .5s ease;
+cursor: pointer;
 }
 
 .card:hover{
@@ -211,6 +227,30 @@ box-shadow: 0 0 0 10px #151515;
 transition: .5s ease;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #BAA37A;
+  color: #151515;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.w3-button{
+    background: #151515;
+}
+.learn-div{
+    background-color: #CFB990;
+}
+.project-space{
+    padding-bottom: 20vh;
+}
 @media screen and (max-width: 750px) {
     .navbar{
         height: 65px;
@@ -243,15 +283,18 @@ transition: .5s ease;
 
 .navbar ul.links #links-talk {
   text-decoration: none;
-  color: #f0f0f0;
-  border: 2px solid #f0f0f0;
-  background: none;
+  color: #151515
+  border: 2px solid transparent;
+  background: #BAA37A;;
+  
 }
 .navbar ul.links #links-talk:hover{
   text-decoration: none;
-  color: black;
+  color: #f0f0f0;
   border: none;
   background: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  background: none;
 }
 
   .navbar.collapsed .toggle .line1 {
@@ -297,9 +340,7 @@ transition: .5s ease;
   .navbar.collapsed .links li {
     width: 100%;
   }
-  .navbar.collapsed .links li:hover a {
-    color: #080808;
-  }
+ 
 
   .navbar.collapsed .right {
     position: fixed;
