@@ -234,13 +234,13 @@ box-shadow: 0 0 0 10px #151515;
 transition: .5s ease;
 }
 
-.behance-text{
+.contact-text{
     text-decoration: underline;
     font-weight: 600;
     color: #BAA37A;
     font-size: 16px;
 }
-.behance-text:hover{
+.contact-text:hover{
     color: #BAA37A;
 }
 #myBtn {
@@ -262,7 +262,7 @@ transition: .5s ease;
     background: #151515;
 }
 .learn-div{
-    text-decoration: underline;
+
 }
 .project-space{
     padding-bottom: 20vh;
