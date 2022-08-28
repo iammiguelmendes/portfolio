@@ -117,8 +117,8 @@ section h1{
     height: 100vh;
     color: #f0f0f0;
 }
-#my-name, #project-hero{
-font-size: 50px;
+#my-name, .project-title{
+font-size: 5vw;
 padding-top:35vh;
 font-family: Lacquer;
 }
