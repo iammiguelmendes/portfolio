@@ -109,6 +109,7 @@ a{
 
 section h1{
     font-family: Lacquer;
+    font-size: 30px;
 }
 .contacto hr {
     background-color: #BAA37A;
@@ -118,7 +119,7 @@ section h1{
     color: #f0f0f0;
 }
 #my-name, .project-title{
-font-size: 5vw;
+font-size: 40px;
 padding-top:35vh;
 font-family: Lacquer;
 }
@@ -274,6 +275,10 @@ transition: .5s ease;
     font-size: 16px;
 }
 @media screen and (max-width: 750px) {
+
+    section{
+        padding: 0 15px;
+    }
     .navbar{
         height: 65px;
     }
