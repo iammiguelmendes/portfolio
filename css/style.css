@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 *{
     margin:0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
 body{
 	color: var(--text-color);
 	background: url(https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1790&q=80)  no-repeat center center fixed; 
@@ -38,7 +41,7 @@ a{
 }
 .navbar .logo h2{
   cursor: pointer;
-  font-family: Lacquer;
+  font-family: 'Libre Baskerville', serif;
   color: #f0f0f0;
   margin-left: 50px;
 }
@@ -108,7 +111,7 @@ a{
 }
 
 section h1{
-    font-family: Lacquer;
+    font-family: 'Libre Baskerville', serif;
     font-size: 30px;
 }
 .contacto hr {
@@ -119,16 +122,16 @@ section h1{
     color: #f0f0f0;
 }
 #my-name, .project-title{
-font-size: 42px;
+font-size: 40px;
 padding-top:35vh;
-font-family: Lacquer;
+font-family: 'Libre Baskerville', serif;
 }
 .port-doce{
     width: 100%;
     padding-top: 10vh;
 }
 .project-title{
-    font-family: Lacquer;
+    font-family: 'Libre Baskerville', serif;
 }
 .portfolio,.about,.process,.reasons{
     padding-top:5vh;
