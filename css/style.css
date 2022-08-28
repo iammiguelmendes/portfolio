@@ -233,9 +233,7 @@ cursor: pointer;
 box-shadow: 0 0 0 10px #151515;
 transition: .5s ease;
 }
-.card-mobile{
-    filter: grayscale(100%);
-}
+
 .contact-text{
     text-decoration: underline;
     font-weight: 600;
