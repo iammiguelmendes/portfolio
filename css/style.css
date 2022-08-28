@@ -268,7 +268,10 @@ transition: .5s ease;
     padding-bottom: 20vh;
 }
 .highlight{
-    background-color: rgb(186, 163, 122,0.5);
+    background-color: rgb(186, 163, 122,0.5)
+}
+.end-project{
+    font-size: 16px;
 }
 @media screen and (max-width: 750px) {
     .navbar{
