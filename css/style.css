@@ -19,6 +19,9 @@ body{
 a{
     text-decoration: none;
 }
+p{
+    line-height: 1.6;
+}
 
 .navbar {
   color: #fff;
@@ -372,7 +375,6 @@ transition: .5s ease;
     width: 100%;
   }
  
-
   .navbar.collapsed .right {
     position: fixed;
     width: 45vw;
