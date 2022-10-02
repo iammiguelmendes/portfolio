@@ -139,7 +139,9 @@ font-family: 'Libre Baskerville', serif;
 .portfolio,.about,.process,.reasons{
     padding-top:5vh;
 }
-
+.portfolio{
+    margin-top: 20vh;
+}
 .contacto{
     background-color: rgba(15, 15, 15, 0.7);
     margin: 10vw 0px;
@@ -231,12 +233,12 @@ font-weight: 100;
     color: #f0f0f0;
 }
 
-.card-docelene, .card-piranha{
+.card{
 transition: .5s ease;
 cursor: pointer;
 }
 
-.card-docelene:hover, .card-piranha:hover{
+.card:hover{
 box-shadow: 0 0 0 10px #151515;
 transition: .5s ease;
 }
