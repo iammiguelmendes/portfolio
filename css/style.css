@@ -113,9 +113,8 @@ p{
   transform-origin: bottom left;
 }
 
-section h1{
+section h1,h2,h3{
     font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
 }
 .contacto hr {
     background-color: #BAA37A;
@@ -136,11 +135,11 @@ font-family: 'Libre Baskerville', serif;
 .project-title{
     font-family: 'Libre Baskerville', serif;
 }
-.portfolio,.about,.process,.reasons{
+.portfolio,.about,.process,.reasons, .prof-section{
     padding-top:5vh;
 }
 .portfolio{
-    margin-top: 20vh;
+    margin-top: 0vh;
 }
 .contacto{
     background-color: rgba(15, 15, 15, 0.7);
@@ -200,7 +199,7 @@ font-weight: 100;
 .submit-text:hover{
     transform: translateY(-5px);
 }
-.portfolio, .reasons, .process, .about{
+.portfolio, .reasons, .process, .about, .prof-section{
     background-color: #f0f0f0;
 }
 .process{
