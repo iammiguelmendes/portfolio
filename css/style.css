@@ -140,7 +140,7 @@ font-family: 'Libre Baskerville', serif;
 .project-title{
     font-family: 'Libre Baskerville', serif;
 }
-.portfolio,.about,.process,.reasons, .prof-section, .for-you{
+.portfolio,.about,.process,.reasons, .prof-section, .for-you, .infinia{
     padding-top:5vh;
 }
 .portfolio{
@@ -204,7 +204,7 @@ font-weight: 100;
 .submit-text:hover{
     transform: translateY(-5px);
 }
-.portfolio, .reasons, .process, .about, .prof-section, .for-you{
+.portfolio, .reasons, .process, .about, .prof-section, .for-you, .infinia{
     background-color: #f0f0f0;
 }
 .process{
@@ -290,6 +290,10 @@ transition: .5s ease;
 }
 .cs-img{
     width: 80%; margin-left: auto; margin-right: auto; display:block; padding-top: 20px;
+}
+
+.inf-body{
+    background-color: #f0f0f0;
 }
 @media screen and (max-width: 750px) {
 
