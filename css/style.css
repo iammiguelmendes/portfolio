@@ -142,7 +142,7 @@ font-family: 'Libre Baskerville', serif;
 .project-title{
     font-family: 'Libre Baskerville', serif;
 }
-.portfolio,.about,.process,.reasons, .prof-section{
+.portfolio,.about,.process,.reasons, .prof-section, .for-you{
     padding-top:5vh;
 }
 .portfolio{
@@ -206,7 +206,7 @@ font-weight: 100;
 .submit-text:hover{
     transform: translateY(-5px);
 }
-.portfolio, .reasons, .process, .about, .prof-section{
+.portfolio, .reasons, .process, .about, .prof-section, .for-you{
     background-color: #f0f0f0;
 }
 .process{
